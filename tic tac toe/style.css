@@ -1,0 +1,577 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+}
+
+.head {
+  width: 100%;
+  height: 5%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 {
+  width: 100%;
+  height: 100%;
+  background-color: #fb8500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  width: 25%;
+  height: 53%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  gap: 18px;
+  border-radius: 15px;
+}
+
+.buttons button {
+  width: 8rem;
+  height: 8.4rem;
+  border-radius: 25px;
+  font-size: 70px;
+  background-color: #219ebc;
+  cursor: pointer;
+  color: #a5be00;
+}
+
+.buttons button:hover {
+  border: 4px solid black;
+}
+
+.showwinner {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  margin-top: 20px;
+}
+
+.winner {
+  width: 40%;
+  background-color: aquamarine;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.main-score {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  /* background-color: #003554; */
+  margin-top: 15px;
+}
+
+.score {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5be00;
+  border-radius: 25px;
+  gap: 155px;
+}
+
+.X {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.O {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#userX {
+  font-size: 50px;
+}
+
+#userO {
+  font-size: 50px;
+}
+
+#score0 {
+  padding-left: 6px;
+  color: red;
+}
+
+#scoreX {
+  padding-left: 6px;
+  color: red;
+}
+
+.reset button {
+  height: 55px;
+  width: 115px;
+  background-color: #003554;
+  border-radius: 35px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reset {
+  margin-top: 25px;
+}
+
+/* // Media Queries // */
+
+@media (max-width: 1700px) {
+  .buttons button {
+    width: 7rem;
+    height: 8.4rem;
+    border-radius: 25px;
+    font-size: 70px;
+    background-color: #219ebc;
+    cursor: pointer;
+    color: #a5be00;
+}
+}
+
+@media (max-width: 1600px) {
+  .buttons button {
+    width: 118px;
+    height: 122px;
+  }
+
+  .buttons {
+    width: 30%;
+    height: 55%;
+  }
+}
+
+@media (max-width: 1625px) {
+  .buttons button {
+    width: 125px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .buttons button {
+    width: 110px;
+    height: 120px;
+  }
+
+  .buttons button {
+    width: 100px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .buttons button {
+    width: 165px;
+    height: 115px;
+    
+  }
+
+  .buttons {
+    width: 50%;
+    height: 56%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 40px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .buttons button {
+    width: 127px;
+    height: 115px;
+    
+  }
+
+  .buttons {
+    width: 43%;
+    height: 56%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 40px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .buttons button {
+    width: 116px;
+    height: 122px;
+  }
+
+  .buttons {
+    width: 47%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 50px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .buttons {
+    width: 46%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 50px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 975px) {
+  .buttons button {
+    width: 110px;
+    height: 122px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .buttons {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 50px;
+
+  }
+}
+
+@media (max-width: 900px) {
+  .buttons button {
+    width: 128px;
+    height: 94px;
+  }
+
+  .buttons {
+    width: 58%;
+    height: 46%;
+    gap: 37px;
+  }
+
+  .showwinner {
+    width: 100%;
+    height: 8%;
+  }
+}
+
+@media (max-width: 850px) {
+  .buttons {
+    width: 63%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 50px;
+    border-radius: 15px;
+  }
+
+  .buttons button {
+    width: 127px;
+    height: 93px;
+  }
+
+  .winner {
+    width: 65%;
+    background-color: aquamarine;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  .score {
+    display: flex;
+    width: 49%;
+    height: 89%;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5be00;
+    border-radius: 25px;
+    gap: 155px;
+  }
+}
+
+@media (max-width: 800px) {
+  .buttons {
+    width: 84%;
+    height: 44%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 50px;
+    border-radius: 15px;
+  }
+
+}
+
+@media (max-width: 790px) {
+
+  .buttons {
+    width: 65%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 45px;
+    border-radius: 15px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .buttons button {
+    width: 112px;
+    height: 95px;
+  }
+}
+
+@media (max-width: 680px) {
+  .buttons button {
+    width: 111px;
+    height: 103px;
+  }
+
+  .buttons {
+    width: 65%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 30px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .buttons button {
+    width: 111px;
+    height: 103px;
+  }
+
+  .buttons {
+    width: 65%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 30px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .buttons button {
+    width: 88px;
+    height: 90px;
+  }
+
+}
+
+@media (max-width: 590px) {
+  
+  .buttons button {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 510px) {
+  .buttons button {
+    width: 85px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 635px) {
+  .buttons button {
+    width: 90px;
+    height: 95px;
+  }
+
+}
+
+@media (max-width: 485px) {
+  .buttons button {
+    width: 105px;
+    height: 120px;
+}
+
+  .buttons {
+    width: 87%;
+    height: 52%;
+  }
+}
+
+@media (max-width: 430px) {
+  .buttons button {
+    width: 90px;
+    height: 110px;
+}
+}
+@media (max-width: 420px) {
+}
+
+@media (max-width: 400px) {
+
+  .buttons {
+    width: 84%;
+    height: 44%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 30px;
+    border-radius: 15px;
+  }
+
+  .buttons button {
+    width: 79px;
+    height: 66px;
+  }
+
+  .score {
+    display: flex;
+    width: 69%;
+    height: 126%;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5be00;
+    border-radius: 25px;
+    gap: 155px;
+  }
+}
+
+@media (max-width: 350px) {
+  .buttons {
+    width: 84%;
+    height: 44%;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 21px;
+    border-radius: 15px;
+}
+.buttons button{
+  width: 68px;
+  height: 84px;
+}
+}
+@media (max-width: 300px) {
+  .buttons {
+    width: 84%;
+    height: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 38px;
+    border-radius: 15px;
+  }
+
+  .buttons button {
+    width: 54px;
+    height: 101px;
+  }
+
+  .score {
+    display: flex;
+    width: 79%;
+    height: 108%;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5be00;
+    border-radius: 25px;
+    gap: 155px;
+}
+}
+
+@media (max-width: 300px) {
+  .buttons {
+    width: 84%;
+    height: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    gap: 17px;
+    border-radius: 15px;
+  }
+  .buttons button {
+    width: 67px;
+    height: 63px;
+  }
+}
+*/ */
