@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <div class="header">
+      <div class="logo">
+        <!--  -->
+        <svg
+          role="img"
+          viewBox="0 0 24 24"
+          aria-label="Spotify"
+          aria-hidden="false"
+          height="32"
+          data-encore-id="logoSpotify"
+          class="spotify-logo svg-icon"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Spotify</title>
+          <path
+            d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546"
+            transform="translate(-0.95,0)"
+            class="spotify-path"
+            fill="white"
+          ></path>
+        </svg>
+        <div class="bar">
+          <i id="bar" class="fa-solid fa-bars ham"></i>
+        </div>
+      </div>
+
+      <div class="input">
+        <div class="house">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <form class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="nosubmit"
+            type="search"
+            placeholder="What do you want to play?"
+          />
+          <div class="inside">
+            <p>|</p>
+            <i class="fa-solid fa-print"></i>
+          </div>
+        </form>
+      </div>
+      <div class="buttons">
+        <p class="text">Sign up</p>
+        <button class="login">Log in</button>
+      </div>
+    </div>
+
+    <!-- hero Section-->
+    <div class="herosection">
+      <div class="left">
+        <div class="upper">
+          <div class="library">
+            <div class="i1">
+              <img src="icon.svg" alt="Icon" class="lib-icon" />
+              <p>Your Library</p>
+            </div>
+            <div class="i2">
+              <i class="fa-solid fa-plus" id="plus"></i>
+            </div>
+          </div>
+          <div class="playlist">
+            <h2>Create your first playlist</h2>
+            <p>Create your first playlist</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="products">
+            <h2>Lets find Some podcasts to follow</h2>
+            <p>We'll keep you updated on new episodes</p>
+            <button>Browse Podcasts</button>
+          </div>
+        </div>
+        <div class="songlist">
+          <ul class="ul"></ul>
+        </div>
+        <div class="footer">
+          <div class="f1">
+            <p>Legal</p>
+            <p>Safety & Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+          </div>
+          <div class="f2">
+            <p>About Ads</p>
+            <p id="last">Accessiblity</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right section in herosection starts here -->
+      <div class="right">
+        <div class="inside-right">
+          <div class="main">
+            <div class="text">
+              <h2>Popular Albums</h2>
+            </div>
+              <div class="cards">
+
+              </div>
+            </div>
+          <!-- Popular Artists Section Starts From here -->
+          <!-- Popular Artists Section Starts From here -->
+          <!-- Popular Artists Section Starts From here -->
+          <div class="main2">
+            <!-- <div class="main"> -->
+
+            <div class="text text2">
+              <h2>Popular Artists</h2>
+            </div>
+            <div class="cards2"></div>
+            <!-- </div> -->
+            <!-- popular Radio Section Starts From here -->
+            <!-- popular Radio Section Starts From here -->
+            <!-- popular Radio Section Starts From here -->
+            <!-- popular Radio Section Starts From here -->
+            
+          </div>
+          <div class="main3">
+            <!-- <div class="main"> -->
+
+            <div class="text">
+              <h2>Most Played</h2>
+            </div>
+            <div class="cards3"></div>
+          <div class="playbar">
+            <div class="controls">
+              <span class="songname"></span>
+              <div class="iconcontrols">
+                <div class="icons">
+                  <i class="fa-solid fa-backward" id="back"></i>
+                  <i class="fa-solid fa-play" id="playbutton"></i>
+                  <i class="fa-solid fa-forward" id="forward"></i>
+                </div>
+                <div class="volume-box">
+                  <i class="fa-solid fa-volume-high" id="volume"></i>
+                  <input
+                    type="range"
+                    name="vol"
+                    min="0"
+                    max="100"
+                    value="10"
+                    class="inputbar"
+                    id="volbar"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span id="running"></span>
+              <input type="range" name="" value="0" id="circle" />
+              <span id="duration"></span>
+            </div>
+          </div>
+
+          
+          <!--  -->
+
+        </div>
+        
+       
+      </div>
+      <div id="mainfooter">
+        <div class="footer1">
+          <div class="insidefooter1">
+            <ul>
+              <li><span class="span1">Company</span></li>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For The Record</li>
+            </ul>
+          </div>
+          <div class="insidefooter2">
+            <ul>
+              <li><span class="span2">Communities</span></li>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+              <li>Vendors</li>
+            </ul>
+          </div>
+          <div class="insidefooter3">
+            <ul>
+              <li><span class="span3">Useful Links</span></li>
+              <li>Support</li>
+              <li>Free Mobile App</li>
+            </ul>
+          </div>
+          <div class="insidefooter4">
+            <ul>
+              <li><span class="span4">Spotify Plans</span></li>
+              <li>Premium Individual</li>
+              <li>Premium Duo</li>
+              <li>Premium Family</li>
+              <li>Premium Student</li>
+              <li>Spotify Free</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer2">
+          <a href=https://www.instagram.com/hussain_bin_fazal/?hl=en target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://x.com/Hussainbinfaza1?t=japwjxMR7bJIjG3f8AMW-g&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.facebook.com/share/18gohPqChN/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
