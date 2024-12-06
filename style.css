@@ -1,0 +1,144 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(to left,#e66465, #82c23a);; */
+  background-color: #002339;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  height: 52.5vh;
+  margin-top: 120px;
+  background-color: #000000;
+  border-radius: 5%;
+}
+.display {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+#input-screen {
+  width: 95%;
+  height: 90%;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+  gap: 1px;
+  padding-left: 14px;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+}
+.span {
+  background-color: #ff9f0a;
+}
+
+.buttons button {
+  height: 68px;
+  width: 23%;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2a2a2c;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.buttons .row {
+  height: 16%;
+  width: 100%;
+}
+
+@media (max-width: 1650px) {
+  .buttons button {
+    height: 61px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .calculator {
+    width: 33vw;
+  }
+
+  .buttons button {
+    height: 61px;
+    width: 22%;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2a2a2c;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+}
+@media (max-width: 760px) {
+  .buttons {
+    padding-left: 6px;
+  }
+  .buttons button {
+    height: 55px;
+    width: 22%;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2a2a2c;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .calculator {
+      display: flex;
+      flex-direction: column;
+      width: 55vw;
+      height: 47.5vh;
+      margin-top: 120px;
+      background-color: #000000;
+      border-radius: 5%;
+    }
+
+}
+@media (max-width: 480px) {
+  .buttons {
+    padding-left: 6px;
+  }
+  .buttons button {
+    height: 55px;
+    width: 22%;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #2a2a2c;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+}
+
+@media(max-width:380px){
+  .buttons button {
+    height: 43px;
+  }
+}
