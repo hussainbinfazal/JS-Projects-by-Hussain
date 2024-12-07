@@ -1,0 +1,374 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2c078;
+    height: 100%;
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: #fe5d26;
+}
+
+.head h1 {
+    font-size: 1em;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding-top: 100px;
+    gap: 35px;
+    border-radius: 50%;
+}
+
+.images img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.images img:hover {
+    cursor: pointer;
+    border: 5px solid green;
+}
+
+.showwinner {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #c1dbb3;
+    border-radius: 25px;
+}
+
+.score {
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.winner {
+    width: 100%;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    margin-top: 25px;
+}
+
+.scoreboard {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 30px 0px;
+    gap: 150px;
+    background-color: #faedca;
+    border-radius: 35px;
+    cursor: none;
+}
+
+.scoreboard p {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.yourscore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partition {
+    font-size: 40px;
+    font-weight: 650;
+}
+
+#point1 {
+    color: red;
+    margin-left: 35px;
+}
+
+#point2 {
+    color: red;
+    margin-left: 100px;
+}
+
+.resetbtn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.resetbtn button {
+    padding: 11px;
+    height: 4rem;
+    width: 9rem;
+    font-size: 18px;
+    border-radius: 35px;
+    color: aliceblue;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    background-color: #003566;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1250px) {
+    .scoreboard {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        padding: 30px 0px;
+        gap: 71px;
+        background-color: #faedca;
+        border-radius: 35px;
+        cursor: none;
+    }
+
+    .scoreboard p {
+        font-size: 33px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 500px) {
+    .images img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .partition {
+        font-size: 22px;
+        font-weight: 650;
+    }
+
+    .scoreboard {
+        display: flex;
+        width: 74%;
+        justify-content: center;
+        padding: 30px 0px;
+        gap: 29px;
+        background-color: #faedca;
+        border-radius: 35px;
+        cursor: none;
+    }
+
+    .scoreboard p {
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .showwinner p {
+        font-size: 20px;
+    }
+
+    .winner {
+        height: 77px;
+    }
+
+    #point2 {
+        color: red;
+        margin-left: 51px;
+    }
+
+    #point1 {
+        color: red;
+        margin-left: 30px;
+    }
+
+    .head h1 {
+        font-size: 1em;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .images img {
+        height: 200px;
+        width: 167px;
+        border-radius: 50%;
+    }
+
+    .head h1 {
+        font-size: 1em;
+    }
+
+    .partition {
+        font-size: 34px;
+        font-weight: 650;
+    }
+
+    .scoreboard {
+        display: flex;
+        width: 74%;
+        justify-content: center;
+        padding: 30px 0px;
+        gap: 50px;
+        background-color: #faedca;
+        border-radius: 35px;
+        cursor: none;
+    }
+
+    .images img {
+        height: 230px;
+        width: 206px;
+        border-radius: 50%;
+    }
+
+    #point2 {
+        color: red;
+        margin-left: 52px;
+    }
+
+    .partition {
+        font-size: 28px;
+        font-weight: 650;
+    }
+
+    .resetbtn button {
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .scoreboard p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .images img {
+        height: 135px;
+        width: 135px;
+        border-radius: 50%;
+    }
+
+    .showwinner p {
+        font-size: 18px;
+    }
+
+    .winner {
+        height: 87px;
+    }
+
+    #point1 {
+        color: red;
+        margin-left: 22px;
+    }
+
+    #point2 {
+        color: red;
+        margin-left: 22px;
+    }
+
+    .showwinner {
+        width: 74%;
+    }
+
+    .scoreboard {
+        display: flex;
+        width: 83%;
+    }
+
+    .showwinner p {
+        font-size: 12px;
+        padding-left: 18px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+
+    .scoreboard p {
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .partition {
+        font-size: 35px;
+        font-weight: 650;
+    }
+}
+
+@media (max-width: 376px) {
+    .scoreboard p {
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .partition {
+    font-size: 25px;
+    font-weight: 650;
+    }
+    .images img {
+    height: 122px;
+    width: 102px;
+    border-radius: 50%;
+    }
+}
+
+@media (max-width: 560px) {
+    .scoreboard {
+        display: flex;
+        width: 83%;
+        gap: 35px;
+    }
+}
+
+@media (max-width : 440px) {
+    .scoreboard p {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .partition {
+        font-size: 28px;
+        font-weight: 650;
+    }
+
+    #point2 {
+        color: red;
+        margin-left: 46px;
+    }
+}
+
+
+@media(max-width: 915px) {
+    .partition {
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .scoreboard p {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    #point2 {
+        color: red;
+        margin-left: 60px;
+    }
+}
