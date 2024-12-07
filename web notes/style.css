@@ -1,0 +1,193 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    overflow: auto;
+
+}
+#btn{
+    height: 4rem;
+    width: 12rem;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 35px;
+    margin-bottom: 35px;
+    color: white;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(
+     #7209b7,#480ca8
+    );
+    padding: ;
+}
+
+#btn i {
+    margin-right: 8px;
+}
+.main2{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    
+}
+.main2 p {
+    border: none;
+    outline:none ;
+}
+.main2 h1{
+    font-size: 45px;
+    color: #f4f4f4;
+}
+.main2 i{
+    
+}
+
+.main2 img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 8px;
+}
+#pencil{
+    
+}
+.notes{
+    height: 11.25rem;
+    width: 50rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 15px 0px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.notes p{
+    color: grey;
+}
+#deleteicon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #480ca8;
+    color: white;
+    font-weight: 800;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+
+@media (max-width: 780px) {
+    .main2 {
+      height: auto;
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .notes {
+      height: auto;
+      width: 100%;
+      max-width: 42rem; /* Adjusting to make it responsive */
+    }
+  
+    #btn {
+      width: 10rem;
+      font-size: 16px;
+    }
+  
+    .main2 h1 {
+      font-size: 35px;
+    }
+  }
+  
+  /* Media Query for mobile and below (max-width: 380px) */
+  @media (max-width: 380px) {
+    .main2 {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 15px;
+    }
+  
+    .notes {
+      height: auto;
+      width: 90%; /* Adjust to 90% of the screen width */
+      max-width: 100%;
+    }
+  
+    #btn {
+      width: 9rem;
+      font-size: 14px;
+    }
+  
+    .main2 h1 {
+      font-size: 28px;
+    }
+  
+    #deleteicon {
+      padding: 8px;
+    }
+  }
+  @media (max-width: 1050px) {
+    .main2 {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 15px;
+    }
+  
+    .notes {
+      height: auto;
+      width: 90%; /* Adjust to 90% of the screen width */
+      max-width: 100%;
+    }
+  
+    #btn {
+      width: 9rem;
+      font-size: 14px;
+    }
+  
+    .main2 h1 {
+      font-size: 28px;
+    }
+  
+    #deleteicon {
+      padding: 8px;
+    }
+  }
+
+  @media (max-width: 1290px) {
+    .main2{
+        height: auto;
+        width: auto;
+    }  
+        
+}
