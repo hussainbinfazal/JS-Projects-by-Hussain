@@ -35,7 +35,7 @@ sdB.addEventListener("click", () => {
 // monks function give us song //
 async function monks(folder) {
   currFolder = folder;
-  let s = await fetch(`http://127.0.0.1:5500/${folder}/`);
+  let s = await fetch(`/${folder}/`);
   let res = await s.text();
   let div = document.createElement("div");
   div.innerHTML = res;
@@ -127,7 +127,7 @@ async function displayAlbums() {
 
     if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
       let folder = e.href.split("/").slice(-1)[0];
-      let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+      let a = await fetch(`/songs/${folder}/info.json`);
       let jsonResponse = await a.json();
       card.innerHTML =
         card.innerHTML +
@@ -171,7 +171,7 @@ async function displayAlbums2() {
 
     if (e.href.includes("/popular/") && !e.href.includes(".htaccess")) {
       let folder = e.href.split("/").slice(-1)[0];
-      let a = await fetch(`http://127.0.0.1:5500/popular/${folder}/info.json`);
+      let a = await fetch(`/popular/${folder}/info.json`);
       let jsonResponse = await a.json();
       card.innerHTML =
         card.innerHTML +
@@ -213,7 +213,7 @@ async function displayAlbums3() {
     const e = array[index];
     if (e.href.includes("/most/") && !e.href.includes(".htaccess")) {
       let folder = e.href.split("/").slice(-1)[0];
-      let a = await fetch(`http://127.0.0.1:5500/most/${folder}/info.json`);
+      let a = await fetch(`/most/${folder}/info.json`);
       let jsonResponse = await a.json();
       card.innerHTML =
         card.innerHTML +
