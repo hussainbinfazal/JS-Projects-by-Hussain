@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="images/favicon.ico">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main2">
+            <h1>Generate a <br></b><span id="textpass">Random Password</span></h1>
+            
+            <div class="maindesired">
+                <label for="passwordLength">Password Length</label>
+                <span id="sign">:</span>
+                <input type="number" id="desired" min="6" max="20" value="12" />
+                
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Your Random Password" id="inputpass">
+                <i class="fa-regular fa-copy" id="copyicon"></i>
+            </div>
+            <div class="button">
+                <button id="btn">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #00296b, #4cc9f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main2 {
+  height: 43%;
+  width: 50%;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+.header {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+/* #heading {
+} */
+
+#quote {
+  height: 0.4rem;
+  width: 8rem;
+  border-radius: 35px;
+  background-color: #00509d;
+  margin-top: -0.5px;
+}
+
+blockquote {
+  font-size: 2.1rem;
+  margin-top: 15px;
+  height: 7rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.span {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  width: 100%;
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+
+#span2 {
+  color: #00509d;
+}
+#newquote {
+  width: 8.5rem;
+  height: 3rem;
+
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  background-color: #00509d;
+  color: white;
+}
+#twitter {
+  width: 8.5rem;
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  outline: none;
+  background-color: transparent;
+  color: rgb(5, 5, 5);
+}
+
+.button {
+  padding-top: 38px;
+  display: flex;
+  gap: 15px;
+}
+
+#twitter img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+@media (max-width:1050px){
+  .main2{
+    height: 45%;
+  }
+  blockquote {
+    font-size: 1.8rem
+  }
+  .span{
+    padding-top: 43px;
+  }
+}
+
+@media (max-width:750px){
+  .main2{
+    width: 65%;
+  }
+  blockquote {
+    font-size: 1.8rem
+  }
+  .span{
+   padding-top: 73px;
+   font-size: 1rem;
+  }
+}
+@media (max-width:545px){
+  .span {
+    padding-top: 73px;
+}
+
+}
+@media (max-width:500px){
+  .main2{
+    width: 90%;
+    height: 60%;
+  }
+  .span{
+    padding-top: 43px;
+  }
+  blockquote {
+    font-size: 1.8rem
+  }
+  .header {
+    height: 23%;
+  }
+  .span {
+    padding-top: 66px;
+}
+}
+
+

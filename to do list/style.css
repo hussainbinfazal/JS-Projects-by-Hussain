@@ -1,0 +1,268 @@
+:root {
+  --a: white;
+  --b: none;
+  --c: black;
+  --d: black;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Rubik", serif;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.main {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ef4895, #b3ff3a);
+}
+.navbar{
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1b2845;
+  
+  background-color: #F2C078;
+} 
+.main2 {
+  height: 80%;
+  width: 50%;
+  background-color: #fdf0d5;
+  padding: 50px;
+  border-radius: 35px;
+  z-index: 9;
+  box-sizing: border-box;
+  
+}
+
+.todo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 55px;
+  font-weight: 600;
+  align-items: center;
+}
+.list {
+  height: 80%;
+  width: 100%;
+  /* overflow-y: scroll; */
+}
+.tasklist{
+ width: 100%;
+ height: 100%;
+ overflow-y: auto;
+ scrollbar-width: thin;
+
+}
+.container {
+  width: 100%;
+  height: 80%;
+  background-color: inherit;
+  margin-top: 25px;
+}
+.tasklist::-webkit-scrollbar { 
+  appearance: none;
+  display: none;  /* Safari and Chrome */
+}
+
+.listLi {
+  list-style: none;
+  color: var(--d);
+  margin-left: 15px;
+  text-decoration: var(--b);
+}
+.task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 35px;
+  /* padding-left: 25px; */
+  margin-top: 15px;
+}
+
+.task input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  border-radius: inherit;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  appearance: none;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.task input:focus {
+  background-color: transparent;  /* Ensure background stays white when focused */
+  color: rgb(0, 0, 0);  /* Keep text color black */
+  caret-color: black;  /* Keep caret visible as black */
+  outline: none;
+}
+.task input,textarea{
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+}
+.task input,textarea::after{
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.task input:hover{
+  caret-color: black;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+.task input::placeholder {
+  color: rgb(0, 0, 0);
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  outline: none;
+}
+.task button {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  background-color: #fb8500;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.div {
+  display: flex;
+  width: 100%;
+  height: 18%;
+  border: 2px solid inherit;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+  padding: 20px 15px;
+  font-weight: 700;
+  border-radius: 35px;
+  margin-bottom: 10px;
+  background-color: #91e5f6;
+}
+
+.circle {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--c);
+  background-color: var(--a);
+
+}
+
+.span {
+  position: absolute;
+  right: 0;
+  top: 10;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.checked {
+  --a: #efa00b;
+  --b: line-through;
+  --c: inherit;
+  --d: grey;
+}
+
+@media (max-width: 768px) {
+  .main2 {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .todo {
+    font-size: 40px; /* Smaller font size */
+    text-align: center; /* Center align text */
+  }
+
+  .task {
+    flex-direction: column;
+    display: flex; /* Stack input and button vertically */
+    height: 60px;
+    margin-top: 10px; /* Reduced margin */
+  }
+
+  .container{
+    margin-top: 102px;
+  }
+  .task input {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .task button {
+    width: 100%; /* Make button full width */
+    margin-top: 80px; /* Add some spacing on top */
+  }
+
+  .div {
+     /* Stack circle and text vertically */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .circle {
+    margin-bottom: 10px; /* Space between circle and text */
+  }
+
+  .span {
+    position: absolute;
+    right: 0;
+    top: auto;
+    padding-right: 21px;
+  }
+
+  .checked {
+    text-align: center; /* Center align checked items */
+  }
+}
+
+@media (max-width: 480px) {
+  .todo {
+    font-size: 30px; /* Adjust font size further for mobile */
+  }
+
+  .task input {
+    padding: 5px; /* Less padding on very small screens */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .task button {
+    width: 100%;
+    font-size: 16px; /* Adjust button font size */
+  }
+}
