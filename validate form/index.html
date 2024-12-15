@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validated Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="inputgroup">
+                <label for="namegroup">Name</label>
+                <input type="text" placeholder="Enter Your Name Here" id="namegroup" onkeyup="checkName()">
+                <span id="NameError"></span>
+            </div>
+            <div class="inputgroup">
+                <label for="emailgroup">Email</label>
+                <input type="email" placeholder="Enter Your Email Here" id="emailgroup" onkeyup="checkEmail()">
+                <span id="EmailError"></span>
+            </div>
+            <div class="inputgroup">
+                <label for="phonegroup">Phone No</label>
+                <input type="number" placeholder="Enter Your Phone Number Here" id="phonegroup" onkeyup="checkNumber()">
+                <span id="PhoneError"></span>
+            </div>
+            <div class="inputgroup" id="messagediv">
+                <label for="messagegroup">Message</label>
+                <input type="text" placeholder="Enter Your Message Here" id="messagegroup" onkeyup="checkMessage()">
+                <span id="MessageError"></span>
+            </div>
+            <button>Submit Form</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #0077b6, #ffd8be);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 {
+  width: 25%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: borderAnim 5s infinite;
+  border: 3px solid #0077b6; /* Fallback solid border */
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.inputgroup {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.inputgroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.inputgroup input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  transition: border 0.3s ease;
+}
+
+.inputgroup input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+.inputgroup input::placeholder {
+  font-style: italic;
+  color: #999;
+  vertical-align: text-top;
+  text-align: start;
+
+  
+}
+
+.inputgroup span {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  transition: visibility 0.3s ease;
+}
+
+.inputgroup input.invalid + span {
+  visibility: visible;
+}
+
+#messagediv {
+  height: 10rem;
+  display: flex;
+  align-items: baseline;
+}
+
+label {
+  font-size: 12px;
+  color: #333;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #005f8a;
+}
+
+button:active {
+  background-color: #004d6a;
+}
+
+#messagegroup{
+  height: 7rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .main2 {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  .inputgroup input {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding:10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main2 {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  .inputgroup input {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .main2 {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .inputgroup input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
