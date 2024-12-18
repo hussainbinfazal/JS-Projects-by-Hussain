@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", serif;
+  background-color: #f4f4f4;
+  height: 90vh;
+  width: 100vw;
+}
+
+.herosection {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #023e8a, #ade8f4);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 25px;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(206, 120, 14);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#inputmovie {
+  /* height: 2rem;
+  width: 15rem;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  padding: 5px; */
+  height: 2.5rem;
+  width: 20rem;
+  padding: 0.8rem;
+  border: 2px solid #023e8a; /* Border color matching the navbar */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+#inputmovie:focus {
+  outline: none;
+  border-color: #f4a261; /* Border color changes when focused */
+  box-shadow: 0 0 8px rgba(244, 166, 97, 0.5); /* Soft shadow on focus */
+}
+#inputmovie:focus {
+  outline: none;
+  border-color: #f4a261; /* Border color changes when focused */
+  box-shadow: 0 0 8px rgba(244, 166, 97, 0.5); /* Soft shadow on focus */
+}
+#inputbtn {
+  /* height: 2rem;
+  width: 5rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px; */
+  height: 2.5rem;
+  width: 6rem;
+  background-color: #023e8a; /* Matching navbar color */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+#inputbtn:hover {
+  background-color: #f4a261; /* Change color on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+#inputbtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(244, 166, 97, 0.5); /* Focus effect */
+}
+
+.main3 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 120, 14);
+  position: absolute;
+  bottom: 0;
+}
+.main2 {
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  background-color: #f4f4f4;
+  border-radius: 0.4rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.main2:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.primary {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+
+#moviePoster {
+  height: 35rem;
+  width: 30rem;
+  border-radius: 5px;
+  /* margin-left: 5px; */
+  transition: transform 0.3s ease;
+}
+#moviePoster:hover {
+  transform: scale(1.05);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  gap: 1.2rem;
+  padding-top: 5rem;
+}
+
+.first i {
+  color: orange;
+}
+.secondary {
+  display: flex;
+
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  padding: 3.1rem;
+  gap: 15px;
+  padding-top: 5rem;
+}
+
+.secondary p {
+  font-size: 1.2rem;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+span {
+  font-weight: bold;
+}
+
+#movietitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#genre1 {
+  height: 2rem;
+  width: 9rem;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.details {
+  height: auto;
+  /* s */
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  gap: 20px; /* Add space between genres */
+  flex-wrap: wrap; /* Wrap genres to next line if necessary */
+}
+
+#genre1,
+#genre2,
+#genre3 {
+  height: 2rem;
+  width: 9rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  border-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .main2 {
+    width: 90%;
+  }
+
+  .primary {
+    width: 40%;
+    height: auto;
+  }
+
+  #moviePoster {
+    max-height: 30rem;
+    width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #genre1,
+  #genre2,
+  #genre3 {
+    width: 10rem;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main2 {
+    width: 95%;
+  }
+
+  .primary {
+    width: 50%;
+    height: 100%;
+  }
+
+  #moviePoster {
+    max-height: 28rem;
+    width: 100%;
+  }
+
+  .first {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+  }
+
+  .secondary p {
+    font-size: 1rem;
+  }
+
+  #inputmovie {
+    width: 18rem;
+  }
+
+  #inputbtn {
+    width: 5rem;
+  }
+
+  #genre1,
+  #genre2,
+  #genre3 {
+    width: 8rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .main1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main2 {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+  }
+
+  .secondary p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  #inputmovie {
+    width: 18rem;
+  }
+
+  #inputbtn {
+    width: 5rem;
+  }
+
+  #genre1,
+  #genre2,
+  #genre3 {
+    width: 8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .main2 {
+    width: 100%;
+    height: 99%;
+    overflow-y: scroll;
+  }
+
+  .primary {
+    width: 100%;
+    height: 100%;
+  }
+
+  #moviePoster {
+    max-height: 15rem;
+    width: 100%;
+  }
+
+  .first {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+
+  .secondary p {
+    font-size: 0.9rem;
+  }
+
+  #inputmovie {
+    width: 15rem;
+  }
+
+  #inputbtn {
+    width: 4rem;
+  }
+
+  #genre1,
+  #genre2,
+  #genre3 {
+    width: 7rem;
+  }
+
+  .herosection {
+    overflow-y: scroll;
+  }
+}
